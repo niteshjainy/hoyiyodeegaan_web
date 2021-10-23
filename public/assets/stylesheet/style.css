@@ -551,11 +551,11 @@ footer .copyright{
 .greybg {background: #F5F5F5; padding: 70px 0; width: 100%; float: left; margin: auto; }
 .mainheading {font-size: 32px; font-weight: 600; color: #0A2339; line-height: 36px; width: 100%; float: left; }
 .headingbottom {color: #666666; float: left; width: 100%; margin: 0; font-weight: 400; font-size: 18px; line-height: 24px; margin-top: 10px; }
-.slider {float: left; margin: 0 0 0 0; width: 100%; }
-    .slider .owl-stage-outer {
-        padding-top: 50px;
-      
-    }
+.slider {float: left; margin:50px 0 0 0; width: 100%; }
+#owl-carousel{margin:0;}
+.slider .owl-stage-outer {
+    padding-top: 50px;
+}
 .slider .owl-carousel .owl-item img {display: block; width: auto; max-width: 100%; }
 .inner {background: #fff; border-radius: 20px; float: left; width: 100%;margin-bottom: 30px; box-sizing: border-box; box-shadow: 12px 12px 20px rgb(178 178 178 / 25%); }
 .images {width: 100%; float: left; margin: auto; position: relative; }
