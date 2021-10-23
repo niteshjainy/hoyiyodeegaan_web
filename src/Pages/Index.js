@@ -84,7 +84,7 @@ function Index() {
                   loop
                   id="owl-carousel"
                   nav
-                  margin={30}
+                  margin={20}
                   className="owl-carousel owl-theme"
                 >
                   {/* <div
