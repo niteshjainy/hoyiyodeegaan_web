@@ -502,7 +502,7 @@ function Index() {
                         placeat.
                       </span>
                       <button className="btn btn-warning">
-                        <span>View more</span>
+                        <a href="Listing.html"><span>View more</span></a>
                       </button>
                     </div>
                   </div>
@@ -517,7 +517,7 @@ function Index() {
                         placeat.
                       </span>
                       <button className="btn btn-warning">
-                        <span>View more</span>
+                        <a href="Listing.html"><span>View more</span></a>
                       </button>
                     </div>
                   </div>
@@ -532,7 +532,7 @@ function Index() {
                         placeat.
                       </span>
                       <button className="btn btn-warning">
-                        <span>View more</span>
+                            <a href="Listing.html"><span>View more</span></a>
                       </button>
                     </div>
                   </div>
