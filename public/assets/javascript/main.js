@@ -513,3 +513,17 @@ $(document).ready(function() {
         return false;
     });
 });
+
+
+if (window.matchMedia('(max-width: 640px)').matches) {
+    $(document).ready(function () {
+        $('h5.click').click(function () {
+            $(this).find(".arrow").toggleClass('rotate');
+            $(this).find(".arrow").toggleClass('rotate-reset');
+           /* $('h5.click').next('ul').slideUp();*/
+            $(this).next('ul').slideToggle();
+            return false; 
+
+        });
+    });
+}

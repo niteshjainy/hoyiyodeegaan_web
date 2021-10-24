@@ -9,8 +9,8 @@ function Footer() {
             <a className="bottom-logo" href="index.html">
               <img src="assets/images/logo.png" alt="logo" />
             </a>
-            <h5>Follow us on</h5>
-            <ul className="social-links d-flex mb-0">
+                        <h5 class="click">Follow us on<i class="fa fa-angle-down rotate-reset arrow"></i></h5>
+            <ul className="social-links  mb-0">
               <li>
                 <a href="#">
                   <i className="fa fa-facebook"></i>
@@ -31,7 +31,7 @@ function Footer() {
         </div>
         <div className="col-sm-6 col-md-6 col-lg-3 box">
           <div className="widget">
-            <h5>Explore</h5>
+                        <h5 class="click">Explore <i class="fa fa-angle-down rotate-reset arrow"></i></h5>
             <ul className="bottom-links mb-0">
               <li>
                 <Link to="/about_us" >About us</Link>
@@ -49,7 +49,7 @@ function Footer() {
         </div>
         <div className="col-sm-6 col-md-6 col-lg-3 box">
           <div className="widget">
-            <h5>Useful links</h5>
+                        <h5 class="click">Useful links <i class="fa fa-angle-down rotate-reset arrow"></i></h5>
             <ul className="bottom-links mb-0">
               <li>
                 <Link to="/terms_Conditions" >Terms & Conditions</Link>
@@ -65,7 +65,7 @@ function Footer() {
         </div>
         <div className="col-sm-6 col-md-6 col-lg-3 box">
           <div className="widget">
-            <h5>Download the app</h5>
+                        <h5 class="click">Download the app <i class="fa fa-angle-down rotate-reset arrow"></i></h5>
             <ul className="bottom-links mb-0">
               <li>
                 <a href="#">
