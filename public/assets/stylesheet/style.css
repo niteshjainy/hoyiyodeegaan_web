@@ -580,7 +580,7 @@ footer .copyright{
     box-shadow: 12px 12px 20px rgb(178 178 178 / 25%);
     transform: scale(0.96);
 }
-footer h5 i{display:none;}
+footer h5 i{display:none !important;}
 ul.social-links.mb-0 {
     display: flex;
 }
