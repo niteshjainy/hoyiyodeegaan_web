@@ -52,8 +52,9 @@ const userName = userData ? userData.name ? userData.name : "Hi There" : "NA"
             </Link>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link dropdown-toggle" data-toggle="dropdown">
-                  <img src="assets/images/globe.png" alt="globe" />
+                <a className="nav-link dropdown-toggle globe" data-toggle="dropdown">
+                    <img src="assets/images/globe.png" class="deskwhite" alt="globe" />
+                    <img src="assets/images/globeyellow.png" class="deskyellow" alt="globe" />
                 </a>
                 <ul className="dropdown-menu">
                   <li>

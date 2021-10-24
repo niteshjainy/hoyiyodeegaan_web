@@ -549,7 +549,19 @@ footer .copyright{
     justify-content: space-between;
 }
 
+.globe {
+}
 
+    .globe .deskyellow {
+        position: absolute;
+        left: 8px;
+        display: none;
+        top: 8px;
+    }
+
+    .globe:hover .deskyellow {
+        display: block;
+    }
 /*Home page*/
 .greybg {background: #F5F5F5; padding: 70px 0; width: 100%; float: left; margin: auto; }
 .mainheading {font-size: 32px; font-weight: 600; color: #0A2339; line-height: 36px; width: 100%; float: left; }
