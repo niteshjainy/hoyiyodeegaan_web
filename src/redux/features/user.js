@@ -6,7 +6,7 @@ const initialState = {
   userData: {},
 };
 const defaultToken =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZVd1UWFwUG1paWJXVVpRQTZWTGciLCJpYXQiOjE2MzMzNDQ4NTl9.UZPGzWZ4QNrLO9g5QVt0z96rpU8qTFs9Fuj-D7ntozg";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoianc3dE1aNElHRUJyOGo2V09lYXIiLCJpYXQiOjE2MzUxNTExNjEsImV4cCI6MTY2NjY4NzE2MX0.yDzipzJ3pqxIZRruulRi-NPrl1dQgtFmUP3Yih_Ap0o";
 
 export const createUser = createAsyncThunk(
   "user/createUser",
@@ -22,18 +22,17 @@ export const createUser = createAsyncThunk(
 export const editUser = createAsyncThunk(
   "user/editUser",
   async (body, { dispatch, getState }) => {
-    // const data = JSON.parse(body)
     const state = getState();
     const { id, token } = state.user.userData;
-    console.log("state", id);
+    console.log("id for api", id);
     return axios
-      .put(`/app/edit-user/cToUlxLjcGdJcOfcgIIM`, body, {
+      .put("/app/edit-user/jw7tMZ4IGEBr8j6WOear", JSON.parse(body), {
         headers: {
           Authorization: `Bearer ${defaultToken}`,
-          "Content-Type": "multipart/form-data",
         },
       })
       .then((res) => {
+        console.log("api res", res);
         return res.data;
       });
   }

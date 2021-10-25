@@ -4,9 +4,10 @@ import { useDispatch } from "react-redux";
 import { Redirect } from "react-router";
 import firebase from "../Firebase";
 import { createUser, Toggleloader } from "../redux/features/user";
+import PhoneNumberField from "../Components/PhoneNumberField";
 const Login = ({ clickLoginPopup, handleClose, setClickLoginPopup }) => {
   const [loginPopup, setLoginPopup] = useState(true);
-  const [options, setOptions] = useState("+91");
+  // const [options, setOptions] = useState("+91");
   const [otp, setOtp] = useState(new Array(6).fill(""));
   const [number, setNumber] = useState("");
   const dispatch = useDispatch();
@@ -26,9 +27,9 @@ const Login = ({ clickLoginPopup, handleClose, setClickLoginPopup }) => {
       "sign-in-button",
       {
         size: "invisible",
-        callback: (response) => {
+        callback: (e) => {
           // reCAPTCHA solved, allow signInWithPhoneNumber.
-          onSignInSubmit();
+          onSignInSubmit(e);
         },
       }
     );
@@ -133,7 +134,7 @@ const Login = ({ clickLoginPopup, handleClose, setClickLoginPopup }) => {
                     <div className="ratingform">
                       <div className="col-sm-12 leftnoxes phone">
                         <label className="label">Mobile number</label>
-                        <select
+                        {/* <select
                           value={options}
                           className="form-control"
                           onChange={(e) => setOptions(e.target.value)}
@@ -153,7 +154,15 @@ const Login = ({ clickLoginPopup, handleClose, setClickLoginPopup }) => {
                           onChange={(e) =>
                             setNumber(options + "" + e.target.value)
                           }
-                        />
+                        /> */}
+                       <PhoneNumberField
+                    value={number}
+                    onChange={(e) => setNumber(e)}
+                    name="phone"
+                    required
+                    placeholder="70201761"
+                    className="form-control"
+                  />
                       </div>
                     </div>
                     <div className="ratingform loginform">
