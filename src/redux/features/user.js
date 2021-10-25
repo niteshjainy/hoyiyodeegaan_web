@@ -7,7 +7,7 @@ const initialState = {
 };
 const defaultToken =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoianc3dE1aNElHRUJyOGo2V09lYXIiLCJpYXQiOjE2MzUxNTExNjEsImV4cCI6MTY2NjY4NzE2MX0.yDzipzJ3pqxIZRruulRi-NPrl1dQgtFmUP3Yih_Ap0o";
-//working
+
 export const createUser = createAsyncThunk(
   "user/createUser",
   async (body, { dispatch, getState }) => {
